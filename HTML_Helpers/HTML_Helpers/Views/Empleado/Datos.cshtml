@@ -1,0 +1,33 @@
+﻿
+@model HTML_Helpers.Models.Empleado
+
+@{
+    ViewBag.Title = "Datos";
+}
+@Styles.Render("~/Content/estilos.css")
+
+<div class="contenedor resultado">
+    <header class="header-form">
+        <h2>Tus Datos</h2>
+    </header>
+
+    <div class="grid">
+        <p><span>Nombre: </span>@Model.Nombre</p>
+        <p><span>Apellido: </span>@Model.Apellido</p>
+        <p><span>Cedula: </span>@Model.Cedula</p>
+        <p><span>Edad: </span>@Model.Edad</p>
+        <p><span>Teléfono: </span>@Model.Telefono</p>
+        <p><span>E-Mail: </span>@Model.Correo</p>
+        <p><span>Género: </span>@Model.Genero</p>
+        <p><span>Estado Civil: </span>@Model.EstadoCivil</p>
+        <div class="lista-hobbys">
+            <p><span>Pasatiempos:</span></p>
+            <ul>
+                <li><span>Programar: </span>@Model.Programar</li>
+                <li><span>Dibujar: </span>@Model.Dibujar</li>
+                <li><span>Jugar: </span>@Model.Jugar</li>
+                <li><span>Chatear: </span>@Model.Chatear</li>
+            </ul>
+        </div>
+    </div>  
+</div>
